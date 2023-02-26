@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  background: #3187ed;
+  color: #ffffff;
+  font-size: 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-info span {
+  margin-right: 50px;
+}
+
+.contact-info span i {
+  margin-right: 5px;
+}
+.phone img,
+.email img,
+.location img {
+  height: 16px;
+}
+.dropdowns {
+  display: flex;
+}
+
+.money-dropdown,
+.language-dropdown {
+  margin-left: 10px;
+}
+
+.money-dropdown select,
+.language-dropdown select,
+.classifieds-dropdown select {
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  color: #555;
+}
+/* -------------------------- */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 95px;
+  width: auto;
+}
+
+.classifieds-dropdown select {
+  font-size: 18px;
+  padding: .8rem 1rem;
+  border: none;
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  color: #555;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  padding: 1rem 4rem;
+}
+
+.searchbar input[type="text"] {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.searchbar img {
+  height: 20px;
+  width: 20px;
+}
+.searchbar input[type="text"]::placeholder{
+  text-align: left;
+}
+
+.wishlist-icon img,
+.cart-icon img,
+.user-icon img {
+  height: 21px;
+
+}
+
+.classifieds-button {
+  background-color: #00C6D7;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.classifieds-button:hover {
+  background-color: #3e8e41;
+}
+
+/* --------------- */
+.Categories ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  padding: 1rem 1rem;
+}
+
+.Categories ul a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+/* ------------------------------- */
+
+
+.carousel .slide {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.bannerimg{
+  position: relative;
+  border-radius: 30px;
+}
+.bannertext{
+    position: absolute;
+    padding: 0 2rem;
+    font-size: 32px;
+    top: 39%;
+    left: 40%;
+
+    font-weight: lighter;
+    color: #ffff;
+}
+.bannerspan{
+  font-weight: 600;
+    color: #ffff;
+   
+}
+.bannerslide{
+  padding:0 3rem;
+}
+.thumbs{
+  display: none;
+}
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+    flex-direction: column;
+    flex-flow: column;
+    border: none;
+}
+.carousel-root{
+  height: .5%;
+}
+
+.productlist{
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productlistheader{
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+}
+.productlistheader h5{
+  color: #3187ED;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #F8F8F8;
+  border-radius: 30px;
+}
+
+.product-image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: lighter;
+
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3187ED;
+
+  margin-bottom: 10px;
+}
+
+.product-rating {
+  font-size: 12px;
+  color: #ffd700;
+}
+/* -------------classified------------------- */
+.classifiedproduct1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+
+  padding: 0 2rem;
+
+}
+.classifiedlist{
+  gap: 30px;
+  padding: 1rem 2rem;
+  display: flex;
+  overflow-x: scroll;
+
+}
+.classifiedlist::-webkit-scrollbar {
+  display: none;
+}
+
+.classifiedproduct1 h4{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  }
+.arrows2{
+  display: flex;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.arrow i {
+  color: black;
+}
+
+.arrow-left {
+  margin-right: 20px;
+}
+
+.arrow-right {
+  margin-left: 20px;
+}
+
+.explore {
+  background-color: #00C6D7;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.classifiedproduct{
+  padding: 0 1rem;
+  box-shadow: 0px 9px 26px rgba(0, 0, 0, 0.06);
+border-radius: 30px;
+}
+.classified-image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+
+
+}
+.classified-image img{
+  width: 348px;
+  height: 314px;
+  border-radius: 30px;
+}
+
+
+.classified-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00C6D7;
+
+  margin-bottom: 10px;
+}
+
+/* ------------------recommend--- */
+.recommendlist{
+  padding: 3rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.recommendproduct {
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 20px;
+  box-shadow: 0px 9px 26px rgba(0, 0, 0, 0.06);
+border-radius: 30px;
+}
+
+.recommend-image {
+  flex: 0 0 100px;
+}
+.recommend-image img{
+  height: 180px;
+border-radius: 30px;
+
+}
+.recommendlistheader{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+/* ------------------------flash-------- */
+.flashsale {
+    background-image: url(../public/images/flashsale.svg);
+    display: flex;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    margin: 2rem 3rem;
+    color: #555;
+}
+
+.flashright{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  display: flex;
+    flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* -----------------footer----------- */
+footer {
+  background-color: #F8F8F8;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.quick-links h3,
+.products h3,
+.partner h3,
+.questions h3,
+.app-store h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li,
+.products ul li,
+.partner ul li,
+.questions ul li,
+.app-store ul li {
+  font-size: 14px;
+  color: #8D8D8D;
+}
+.app-store ul img {
+  padding: 2rem 1rem;
+}
+
+.quick-links ul li:hover,
+.products ul li:hover,
+.partner ul li:hover,
+.questions ul li:hover,
+.app-store ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+/* ---------------------------------------- */
+@media (max-width: 992px) {
+  .Categories ul {
+    flex-direction: column;
+    height: 300px;
+    overflow-y: scroll;
+    gap: 0px;
+    padding: 0 1rem;
+
+  }
+  .Categories ul::-webkit-scrollbar {
+    display: none;
+  }
+  .Categories ul{
+    margin-top: 10px;
+  }
+.classifieds-dropdown select {
+  font-size: 12px;
+  padding: .8rem .3rem;
+}
+
+.searchbar {
+      padding: 1rem 0rem;
+    margin: 0px 5px;
+}
+
+
+
+.searchbar img {
+  height: 20px;
+  width: 20px;
+}
+
+.wishlist-icon img,
+.cart-icon img,
+.user-icon img {
+height: 18px;
+    margin: 0px 3px;
+}
+
+.classifieds-button {
+  display: none;
+}
+.Tbar{
+  display: none;
+}
+.categoriesandbanner{
+  display: flex;
+}
+.bannertext{
+  font-size: 21px;
+  left: 35%;
+  top: 29%;
+}
+.flashsale{
+  flex-wrap: wrap;
+
+}
+}
+/* ----------------------------- */
+@media (max-width: 760px) {
+  .bannertext{
+  font-size: 11px;
+  top: 35%;
+}
+footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-links,
+.products,
+.partner,
+.questions,
+.app-store {
+  margin-bottom: 40px;
+}
+
+.quick-links,
+.products,
+.partner,
+.questions {
+  text-align: center;
+}
+.classified-image img {
+  width: 270px;
+  border-radius: 30px;}
+}
